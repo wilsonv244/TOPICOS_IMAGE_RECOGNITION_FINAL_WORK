@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clasificador de imagenes</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/knn-classifier"></script>
+  <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/misEstilos.css">
+</head>
+<body>
+  
+    <header class="cabezera">
+        <div class="contenedor">
+            <h1>RECONOCIENDO PLANTAS DEL PERU CON IA</h1>
+        </div>    
+    </header>
+    <div class="texto contenedor">
+        <p>Para el habitante del altiplano todo ser y hecho no existe aislado, más bien coexiste o es interdependiente con otros seres o fenómenos, por lo tanto no puede ser reconocido solo por una cualidad. Las plantas no escapan a esta concepción, no se las puede concebir solo por su belleza, como alimento, o como objeto. Más bien se las concibe de manera integral y funcional.</p>
+    </div>
+    <video autoplay="" playsinline muted id="webcam" style="width: 80%; margin-left: 10rem;"></video>
+    
+    <a class="btn btn-dark" style="width: 100%;border-radius:0;margin-top: -6px;text-transform:uppercase;font-size: 2rem;" id="enlace" href="#" target="_top">BUSCAR</a>
+
+    
+    <br><br>
+
+    <div class="row align-items-center" style="color:rgb(161, 161, 161)">
+      <div class="col">
+        
+      </div>
+      <div class="col text-center" style="color:rgb(85, 85, 85)">
+
+        <div id="console"></div>
+        
+        <hr>
+
+        </select>
+        <br>
+        <br><br><br><br><br>
+      </div>
+      <div class="col text-center" style="color:rgb(161, 161, 161)">
+
+      </div>
+    </div>
+
+  <br><br>
+  <footer class="site-footer">
+    <div class="contenedor">
+        <div class="barra">
+            <p class="no-margin">Plantas<span>Perú</span></p>
+
+            <nav class="navegacion">
+                <a href="nosotros.html">Nosotros</a>
+                <a href="cursos.html">Cursos</a>
+                <a href="index.html">Contacto</a>
+            </nav>
+        </div>
+    </div>
+</footer>
+
+  <script src="index.js?v43"></script>
+
+</body>
+</html>

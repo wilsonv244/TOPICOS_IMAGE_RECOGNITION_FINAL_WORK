@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My awesome image classifier</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/misEstilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/misEstilos.css">
+</head>
+<body>
+
+    <header class="cabezera" style="background-color: black;">
+        <div class="contenedor">
+            <h1>RECONOCIENDO PLANTAS DEL PERU CON IA</h1>
+        </div>    
+    </header>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner textosC">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img style="width: 600px; height: 700px;" src="plantas/cantuta rosada/la-cantuta-la-flor-sagrada-de-los-incas-y-la-flor-nacional-del-peru-disparo-al-aire-libre-en-condiciones-soleadas-gj82fp.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 style="color: white; font-size: 4rem; font-weight: 700;">Cantuna Rosada</h5>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="plantas/cantuta rosada/la-cantuta-o-flor-de-inca-03.jpg" style="width: 600px; height: 700px;" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 style="color: white; font-size: 4rem; font-weight: 700;">Cantuna Rosada</h5>
+              
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="plantas/cantuta rosada/peru-cantuta-600x4001.jpg" style="width: 600px; height: 700px;" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5  style="color: white; font-size: 4rem; font-weight: 700;">Cantuna Rosada</h5>
+             
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"  data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"  data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="informacionE contenedor" style="width: 50%; margin-top: 2rem; text-align:center;">
+          <div>
+              <p>
+                Desde épocas prehispánicas los pobladores andinos han admirado y rendido culto a las montañas sagradas o apus que protegen sus territorios, e incluso hasta el día de hoy algunos pueblos mantienen la costumbre de venerarlos.
+
+                Es así que los primeros días de febrero se realiza en las comunidades cusqueñas de Sacaca y Chahuaytiri la Fiesta Sacra, en la cual los hombres realizan una larga caminata que bordea los cerros considerados sagrados y donde al pie de cada montaña dejan un montículo de piedras adornado con bellas flores de CANTUTA, que representan su aprecio y devoción.
+                
+                La CANTUTA es la Flor Nacional del Perú y se sabe que los Incas quedaron maravillados por su gran belleza, promoviendo el cultivo de esta planta en todos sus dominios y consagrándola al dios Sol... de allí que también se le conoce como "La Flor Sagrada de los Incas".
+              </p>
+          </div>
+      </div>
+    
+    
+
+    <footer class="site-footer">
+        <div class="contenedor">
+            <div class="barra">
+                <p class="no-margin">Plantas<span>Perú</span></p>
+
+                <nav class="navegacion">
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="cursos.html">Cursos</a>
+                    <a href="index.html">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    
+
+    <!-- Load TensorFlow.js. This is required to use MobileNet. -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.1"> </script> 
+    <!-- Load the MobileNet model. -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@1.0.0"> </script>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clasificador de imagenes</title>
+
+  
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/knn-classifier"></script>
+  <link rel="stylesheet" href="css/hola.css">
+
+   
+  
+</head>
+<body>
+  <header class="cabezera1">
+    <div>
+        <h1 style="padding: 2rem;">RECONOCIENDO PLANTAS DE PUNO CON IA</h1>
+    </div>    
+</header>
+   
+    <video autoplay="" playsinline muted id="webcam" style="width: 80%; margin-left: 8rem; margin-top: 2rem;"></video>
+    
+    <a class="btn btn-dark" style="width: 80%;border-radius:0;margin-top: -6px;text-transform:uppercase; margin-left: 8rem" id="enlace" href="#" target="_top">BUSCAR</a>
+
+    
+    <br><br>
+
+    <div class="row align-items-center" style="color:rgb(161, 161, 161)">
+      <div class="col">
+        
+      </div>
+      <div class="col text-center" style="color:rgb(85, 85, 85)">
+
+        <div id="console"></div>
+        
+        <hr>
+
+        <select class="form-control input-lg" id="IdEntrenarObjeto" style="width: 100%;margin-top: 10px;">
+
+          <option value="1">Sankayo</option>
+          <option value="2">P’enqa-p’enqa</option>
+          <option value="3">Cantuta rosada</option>
+          <option value="4">eucalipto</option>
+          
+        </select>
+
+        <br>
+        
+        <button class="btn btn-primary" onClick="addExample()" style="width: 100%;margin-top: 10px;">ENTRENAR OBJETO</button>
+        
+        <button class="btn btn-primary" onClick="guardarmodelo()" style="width: 100%;margin-top: 10px;">DESCARGAR MODELO</button>
+        
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+      </div>
+      <div class="col text-center" style="color:rgb(161, 161, 161)">
+
+      </div>
+    </div>
+
+  <br><br>
+  <footer class="site-footer cabezera1">
+    <div class="contenedor">
+        <div class="barra">
+            <p class="no-margin">Plantas<span>Perú</span></p>
+
+            <nav class="navegacion">
+                <a href="nosotros.html">Nosotros</a>
+                <a href="cursos.html">Cursos</a>
+                <a href="index.html">Contacto</a>
+            </nav>
+        </div>
+    </div>
+</footer>
+
+  <script src="index.js?v43"></script>
+
+</body>
+</html>

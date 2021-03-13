@@ -1,0 +1,17 @@
+.cabezera1{
+    text-align: center;
+    color: white;
+    
+    background-color: black;
+    height: 8rem;
+    padding: 1.5rem;
+}
+
+.barra p{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.barra a{
+    text-decoration: none;
+    color: white;
+}
