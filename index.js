@@ -61,7 +61,7 @@ async function app(){
     try{
 
       document.getElementById('enlace').innerHTML=clases[result2.label];
-     // document.getElementById('enlace').href=""+clases[result2.label]+".html";
+      document.getElementById('enlace').href=""+clases[result2.label]+".html";
       
     }catch(error){
       document.getElementById("console2").innerHTML="No entrenado";
